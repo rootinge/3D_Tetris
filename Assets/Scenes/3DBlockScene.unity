@@ -244,10 +244,7 @@ PrefabInstance:
     - {fileID: 6626391381531762187, guid: e5b9914282cd4ef41b2850a794421f87, type: 3}
     - {fileID: 471696470123664014, guid: e5b9914282cd4ef41b2850a794421f87, type: 3}
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1366266253788250504, guid: e5b9914282cd4ef41b2850a794421f87, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 51146988}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5b9914282cd4ef41b2850a794421f87, type: 3}
 --- !u!4 &51146986 stripped
 Transform:
@@ -259,19 +256,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1366266253788250504, guid: e5b9914282cd4ef41b2850a794421f87, type: 3}
   m_PrefabInstance: {fileID: 51146985}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &51146988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 51146987}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e747b1add4288984b80cfcf6b6106355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
 --- !u!1 &142186656
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,7 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -630,8 +614,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -100, y: 0}
-  m_SizeDelta: {x: 300, y: 300}
+  m_AnchoredPosition: {x: -43, y: 0}
+  m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &611075375
 MonoBehaviour:
@@ -790,7 +774,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1088908386}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1088908388
 Camera:
   m_ObjectHideFlags: 0
@@ -800,7 +784,7 @@ Camera:
   m_GameObject: {fileID: 1088908386}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 3
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
@@ -826,14 +810,14 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 1.5
+  orthographic size: 2
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 06d9ea71dd342414f8b4647e35d1df55, type: 2}
-  m_TargetDisplay: 0
+  m_TargetDisplay: 1
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
@@ -876,6 +860,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+  sectionBlock: {fileID: 51146987}
+  rotationMoveSpeed: 20
 --- !u!1 &1442018989
 GameObject:
   m_ObjectHideFlags: 0
